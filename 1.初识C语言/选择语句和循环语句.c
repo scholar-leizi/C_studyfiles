@@ -8,25 +8,25 @@ int main()
     {
         if (same == 3)
         {
-            printf("您的次数已用完，请明天再试！\n");
+            printf("鎮ㄧ殑娆℃暟宸茬敤瀹岋紝璇锋槑澶╁啀璇曪紒\n");
         }
         else
         {
-            printf("请输入您的出生年份：");
+            printf("璇疯緭鍏ユ偍鐨勫嚭鐢熷勾浠斤細");
             scanf("%d",&birthday);
             if (birthday <= 0)
             {
-                printf("请您输入正确年份！\n");
+                printf("璇锋偍杈撳叆姝ｇ‘骞翠唤锛乗n");
             }
             else
             {
                 if (today - birthday >= 18)
                 {
-                    printf("您已成年，请尽情享受游戏时光！\n");
+                    printf("鎮ㄥ凡鎴愬勾锛岃灏芥儏浜彈娓告垙鏃跺厜锛乗n");
                 }
                 else
                 {
-                    printf("您未成年，将限制您的游戏时间！\n");
+                    printf("鎮ㄦ湭鎴愬勾锛屽皢闄愬埗鎮ㄧ殑娓告垙鏃堕棿锛乗n");
                 }
                 same+=3;
             }
