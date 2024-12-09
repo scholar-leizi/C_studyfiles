@@ -56,8 +56,20 @@ int main() {
 
     printf("\a");//触发电脑蜂鸣警告
 
-    printf("abc\ndef");
+    printf("abc\ndef\n");
     //“\n”——>换行
+
+    printf("%c\n",'\130');//X
+    //0*8^0+3*8^1+1*8^2=88——>ASCII码表转换为“X”
+
+    printf("%c\n",'\x60');//`
+    //0*16^0+6*16^1=96——>ASCII码表转换为“`”
+
+    printf("%d\n",strlen("abc d"));
+    //空格算一个字符
+
+    printf("%d\n",strlen("C:\test\628\test.c"));
+    //转义字符算一个字符长度
 
     return 0;
 }
