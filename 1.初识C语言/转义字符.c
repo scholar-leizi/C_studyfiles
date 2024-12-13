@@ -28,6 +28,7 @@
 	dd表示两个十六进制数字 如：\x30 0
 */
 #include <stdio.h>
+#include <string.h>
 int main()
 {
     printf("abcn\n");//abcn——>完全输出
