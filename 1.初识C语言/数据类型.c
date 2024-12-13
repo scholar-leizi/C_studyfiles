@@ -1,16 +1,17 @@
 /*
- char——字符数据类型
- short——短整型
- int——整型
- long——长整型
- long long——更长的整型
- float——单精度浮点型
- double——双精度浮点型
- 合理的运用各种类型可以节省变量创建所用的空间
- 类型是用来创建变量并申请空间的
- */
+char——字符数据类型
+short——短整型
+int——整型
+long——长整型
+long long——更长的整型
+float——单精度浮点型
+double——双精度浮点型
+合理的运用各种类型可以节省变量创建所用的空间
+类型是用来创建变量并申请空间的
+*/
 #include <stdio.h>
-int main(){
+int main()
+{
     //用sizeof()函数来查询空间大小
     printf("%d\n",sizeof(char));//1
     printf("%d\n",sizeof(short));//2

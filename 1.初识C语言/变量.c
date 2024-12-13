@@ -5,7 +5,7 @@
      const的常变量
      #define修饰的标识符常量
      枚举常量
- */
+*/
 #include <stdio.h>
 //int a = 10;//创建变量整型a
 const int a = 10;
@@ -14,7 +14,7 @@ const int a = 10;
 
 enum Color
 {
-//enum——>枚举的关键词
+	//enum——>枚举的关键词
     //三原色枚举
     RED,
     GREEN,
