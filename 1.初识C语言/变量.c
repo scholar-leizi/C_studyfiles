@@ -14,7 +14,7 @@ const int a = 10;
 
 enum Color
 {
-	//enum——>枚举的关键词
+    //enum——>枚举的关键词
     //三原色枚举
     RED,
     GREEN,
