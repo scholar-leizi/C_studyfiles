@@ -8,7 +8,34 @@
 int main()
 {
     int a = 10;//向内存申请4个字节用来存储变量——10
-    int b = (int) &a;//取a的地址
-    printf("%d\n", b);
+    printf("%d\n",a);
+    &a;//取a的地址
+    printf("%p\n", &a);//“%p”打印地址
+
+    int* p = &a;//创建指针变量——存储地址
+    //p就是指针变量
+
+    //内存单元的编号=地址=指针
+    //存放指针（地址）的变量就是指针变量
+
+    char ch= 'w';
+    char* pc = &ch;
+    //指针就是用来存放别人（变量）的地址的
+
+    *p;//解引用操作符——通过指针变量p中存放的地址找到所指向的对象，*p就是p指向的对象
+    *p = 20;//通过指针变量找到a，并给a重新赋值
+    printf("%d\n",a);
+
+
+    //指针的大小
+    printf("%d\n",sizeof(char*));
+    printf("%d\n",sizeof(int *));
+    printf("%d\n",sizeof(long*));
+    printf("%d\n",sizeof(long long*));
+    printf("%d\n",sizeof(float*));
+    printf("%d\n",sizeof(double*));
+    printf("%d\n",sizeof(short*));
+    //32位操作系统显示为4，64位操作系统显示为8————任何类型指针的大小都是一样的，因为存储的是地址，地址的大小是相同的，所以指针大小也相同
     return 0;
 }
+//“在锤子的眼里什么都是钉子”————只要把数据存放在指针变量中，指针变量就会认为是地址
