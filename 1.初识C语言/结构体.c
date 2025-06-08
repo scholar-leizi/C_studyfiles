@@ -23,9 +23,10 @@ int main()
     //创建变量并初始化
 
     //结构体对象名.成员名
-    //printf("%s %d %s %s\n",zhanglei.name,zhanglei.age,zhanglei.sex,zhanglei.tele);
+    printf("%s %d %s %s\n",zhanglei.name,zhanglei.age,zhanglei.sex,zhanglei.tele);
     //访问结构体中的数据时要使用“点”操作符
 
     print(&zhanglei);//取结构体对象变量的地址并传给函数
     return 0;
 }
+//define不是关键字，是预处理指令
